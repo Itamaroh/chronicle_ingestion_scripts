@@ -220,7 +220,7 @@
                       "EventhubNamespace": "[parameters('EventhubNamespace')]",
                       "SharedAccessKey": "[parameters('SharedAccessKey')]",
                       "EVENT_HUB_CONNECTION_STRING": "[variables('Eventhubconnstr')]",
-                      "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/chronicle/ingestion-scripts/blob/main/azure_eventhub/AzureEventhub.zip?raw=true"
+                      "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/Itamaroh/chronicle_ingestion_scripts/blob/main/azure_eventhub/AzureEventhub.zip?raw=true"
                   }
               }
           ]
