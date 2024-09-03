@@ -8,7 +8,7 @@
       "eventHubName": "%EventhubName%",
       "connection": "EVENT_HUB_CONNECTION_STRING",
       "cardinality": "many",
-      "consumerGroup": "$Default"
+      "consumerGroup": "%consumer_group%"
     }
   ]
 }
