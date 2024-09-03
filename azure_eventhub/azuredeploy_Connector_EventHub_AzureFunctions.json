@@ -25,6 +25,13 @@
             },
           "defaultValue": "<EventhubName>"
       },
+      "ConsumerGroup": {
+          "type": "string",
+          "metadata": {
+              "description": "Eventhub Consumer Group"
+            },
+          "defaultValue": "$Default"
+      },
       "SharedAccessKey": {
           "type": "string",
           "metadata": {
@@ -205,6 +212,7 @@
                       "APPLICATIONINSIGHTS_CONNECTION_STRING": "[reference(resourceId('microsoft.insights/components', variables('FunctionName')), '2015-05-01').ConnectionString]",
                       "AzureWebJobsStorage": "[concat('DefaultEndpointsProtocol=https;AccountName=', toLower(variables('FunctionName')),';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', toLower(variables('FunctionName'))), '2019-06-01').keys[0].value, ';EndpointSuffix=',toLower(variables('StorageSuffix')))]",
                       "EventhubName": "[parameters('EventhubName')]",
+                      "ConsumerGroup": "[parameters('ConsumerGroup')]",
                       "CHRONICLE_CUSTOMER_ID": "[parameters('ChronicleCustomerID')]",
                       "CHRONICLE_SERVICE_ACCOUNT": "[parameters('ChronicleServiceAccount')]",
                       "CHRONICLE_REGION": "[parameters('ChronicleRegion')]",
