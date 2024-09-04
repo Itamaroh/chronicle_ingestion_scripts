@@ -97,6 +97,7 @@
           },
           "kind": "StorageV2",
           "properties": {
+              "allowBlobPublicAccess": false
               "networkAcls": {
                   "bypass": "AzureServices",
                   "virtualNetworkRules": [],
